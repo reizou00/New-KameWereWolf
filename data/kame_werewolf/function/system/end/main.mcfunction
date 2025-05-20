@@ -3,6 +3,7 @@
     tag @s remove KameServer_WereWolf.Job_Citizen
     tag @s remove KameServer_WereWolf.Job_WereWolf
     tag @s remove KameServer_WereWolf.Rolled
+    tag @s remove KameServer_WereWolf.WereWolfGame_Player
 
 #> スコアリセット
     scoreboard players reset $Citizen
