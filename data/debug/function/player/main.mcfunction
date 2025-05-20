@@ -15,16 +15,6 @@
                 }\
             } run \
             function debug:item/category/job/werewolf/werewolf_tool/main
-            # 持ってない
-            execute \
-            unless data storage reizo_sid:item \
-            {\
-            Hand:\
-                {\
-                Both:"WereWolf_Tool"\
-                }\
-            } run \
-            tag @s remove KameServer_WereWolf.Job_WereWolf
 
 
 
