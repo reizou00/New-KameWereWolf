@@ -10,7 +10,7 @@ tag @s add KameServer_WereWolf.Rolled
 #> 役職の定義
     # 人狼
     execute \
-    as @a[scores={KameSrever_WereWolf.Roll=2}] at @s run \
+    at @s[scores={KameSrever_WereWolf.Roll=2}] run \
     function kame_werewolf:system/start/job_roll/set_job/werewolf
     # 市民
     execute \
