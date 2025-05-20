@@ -51,7 +51,7 @@ if entity @e[tag=KameServer_WereWolf.WereWolfGame_Player]
     scoreboard players operation $RemainCount KameSrever_WereWolf.Temp -= $WereWolf KameSrever_WereWolf.Roll
 
 #> エラー処理を施す。
-    # Temp.ReamainCountが1の時、エラーとなり、強制的にRollスコアが0の人が人狼となる。
+    # 強制的にRollスコアが0の人が人狼となる。
     execute \
     at @s\
     [\
