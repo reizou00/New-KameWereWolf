@@ -11,16 +11,6 @@
     # アイテムの使用検知ライブラリ
     function reizo_itemused:player/main
 
-#> 役職の定義
-    # 人狼
-    execute \
-    as @e[scores={KameSrever_WereWolf.Roll=2}] run \
-    tag @s add KameServer_WereWolf.Job_WereWolf
-    # 市民
-    execute \
-    as @e[scores={KameSrever_WereWolf.Roll=1}] run \
-    tag @s add KameServer_WereWolf.Job_Citizen
-
 #> 役職の人数を計算
     # 人狼
     execute \
@@ -36,32 +26,8 @@ execute \
 store result score $TotalPlayer KameSrever_WereWolf.Roll \
 if entity @e[tag=KameServer_WereWolf.WereWolfGame_Player]
 
-#> 人狼が足りない、多すぎる、を解消するために...
-    # RemainCountにTotalPlayerの値をコピーする。
-    execute \
-    store result score $RemainCount KameSrever_WereWolf.Roll run \
-    scoreboard players get $TotalPlayer KameSrever_WereWolf.Roll
-    # RemainCountからCitizenの値を引く。
-    scoreboard players operation $RemainCount KameSrever_WereWolf.Roll -= $Citizen KameSrever_WereWolf.Roll
-    # Roll.RemainCountの値を、Temp.RemainCountの値に一時格納する。
-    execute \
-    store result score $RemainCount KameSrever_WereWolf.Temp run \
-    scoreboard players get $RemainCount KameSrever_WereWolf.Roll
-    # Temp.ReamainCountから、人狼の人数を引く。
-    scoreboard players operation $RemainCount KameSrever_WereWolf.Temp -= $WereWolf KameSrever_WereWolf.Roll
-
-#> エラー処理を施す。
-    # 強制的にRollスコアが0の人が人狼となる。
-    execute \
-    at @s\
-    [\
-    tag=KameServer_WereWolf.Rolled,\
-    scores=\
-        {\
-        KameSrever_WereWolf.Roll=0\
-        }\
-    ] run \
-    tag @s add KameServer_WereWolf.Job_WereWolf
+# 人狼じゃない奴は市民だ。
+tag @e[tag=!KameServer_WereWolf.Job_WereWolf,tag=KameServer_WereWolf.WereWolfGame_Player] add KameServer_WereWolf.Job_Citizen
 
 #> ジョブごとの動作
     # 人狼

@@ -5,7 +5,4 @@ scoreboard players set @s KameSrever_WereWolf.Roll_Onlyonce_Citizen 0
 scoreboard players set @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf 0
 
 # ロールしよう
-$execute \
-unless score $WereWolf KameSrever_WereWolf.Roll matches $(now).. \
-store result score @s KameSrever_WereWolf.Roll run \
-random value 1..2
+$tag @r[tag=KameServer_WereWolf.WereWolfGame_Player,limit=$(now)] add KameServer_WereWolf.Job_WereWolf
