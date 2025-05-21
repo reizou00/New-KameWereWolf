@@ -26,9 +26,6 @@ execute \
 store result score $TotalPlayer KameSrever_WereWolf.Roll \
 if entity @e[tag=KameServer_WereWolf.WereWolfGame_Player]
 
-# 人狼じゃない奴は市民だ。
-tag @e[tag=!KameServer_WereWolf.Job_WereWolf,tag=KameServer_WereWolf.WereWolfGame_Player] add KameServer_WereWolf.Job_Citizen
-
 #> ジョブごとの動作
     # 人狼
     execute \

@@ -1,7 +1,6 @@
 
 #> Temp.ReamainCountが0だった場合成功、成功の場合set_upをまだしていないならOnlyonceを1にset。
 execute \
-if score $RemainCount KameSrever_WereWolf.Temp matches 0 \
 unless score @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf matches 2 run \
 scoreboard players set @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf 1
 

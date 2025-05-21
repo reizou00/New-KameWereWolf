@@ -1,7 +1,6 @@
 
 # スコア作成
 scoreboard objectives add KameSrever_WereWolf.CoolTime dummy
-scoreboard objectives add KameSrever_WereWolf.Roll dummy
 scoreboard objectives add KameSrever_WereWolf.Roll_Onlyonce_WereWolf dummy
 scoreboard objectives add KameSrever_WereWolf.Roll_Onlyonce_Citizen dummy
 scoreboard objectives add KameSrever_WereWolf.Temp dummy
