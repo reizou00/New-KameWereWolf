@@ -8,7 +8,3 @@
     execute \
     at @s[tag=KameServer_WereWolf.Job_Citizen] run \
     item replace entity @s armor.chest with leather_chestplate
-    # どっちも持ってないなら何もなし。
-    execute \
-    at @s[tag=!KameServer_WereWolf.Job_Citizen,tag=!KameServer_WereWolf.Job_WereWolf] run \
-    item replace entity @s armor.chest with air
