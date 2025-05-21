@@ -1,11 +1,3 @@
 
-#> Tag消去
-    tag @s remove KameServer_WereWolf.Job_Citizen
-    tag @s remove KameServer_WereWolf.Job_WereWolf
-    tag @s remove KameServer_WereWolf.Rolled
-    tag @s remove KameServer_WereWolf.WereWolfGame_Player
-
-#> スコアリセット
-    scoreboard players reset @s KameSrever_WereWolf.Roll
-    scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_Citizen
-    scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf
+# プレイヤー中心に...
+execute as @a[tag=KameServer_WereWolf.WereWolfGame_Player] at @s run function kame_werewolf:system/end/reset
