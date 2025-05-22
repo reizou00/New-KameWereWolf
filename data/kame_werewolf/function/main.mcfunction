@@ -11,5 +11,4 @@ execute as @a at @s run function kame_werewolf:player/main
 function kame_werewolf:setting/main
 
 #> debug処理
-    # エンティティの動作
-    execute as @e at @s run function debug:entity/main
+function debug:main
