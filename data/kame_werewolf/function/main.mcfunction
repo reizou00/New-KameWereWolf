@@ -1,5 +1,5 @@
 
-# 何回やるかスコアsetだ！
+# もし、ゲームがstartしていたなら、何回やるかをset!
 execute \
 if data storage kameserever_werewolf:system {Start:true} run \
 function kame_werewolf:bin/macro/if_score/limit with storage kameserever_werewolf:macros

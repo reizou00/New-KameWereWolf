@@ -20,3 +20,6 @@ setting:\
 
 
 tellraw @a "DataPack導入完了。"
+
+#> debug処理
+function debug:reload

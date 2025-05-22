@@ -1,5 +1,5 @@
 {
     "values": [
-        "debug:bin/command/roll/command_test_dummy/roll"
+        "debug:bin/command/roll/command_test_dummy/roll/main"
     ]
 }

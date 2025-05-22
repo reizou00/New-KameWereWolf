@@ -13,16 +13,16 @@
     # 人狼
     execute \
     store result score $WereWolf KameSrever_WereWolf.Roll \
-    if entity @e[tag=KameServer_WereWolf.Job_WereWolf]
+    if entity @a[tag=KameServer_WereWolf.Job_WereWolf]
     # 市民
     execute \
     store result score $Citizen KameSrever_WereWolf.Roll \
-    if entity @e[tag=KameServer_WereWolf.Job_Citizen]
+    if entity @a[tag=KameServer_WereWolf.Job_Citizen]
 
 #> トータルプレイヤーの人数を計算
 execute \
 store result score $TotalPlayer KameSrever_WereWolf.Roll \
-if entity @e[tag=KameServer_WereWolf.WereWolfGame_Player]
+if entity @a[tag=KameServer_WereWolf.WereWolfGame_Player]
 
 #> ジョブごとの動作
     # 人狼
