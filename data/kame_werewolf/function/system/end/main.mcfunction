@@ -4,3 +4,6 @@ execute as @a[tag=KameServer_WereWolf.WereWolfGame_Player] at @s run function ka
 
 # limitスコアをリセット！
 scoreboard players set $limit KameSrever_WereWolf.Roll 0
+
+# dataリセット
+data merge storage kameserever_werewolf:system {Start:false}
