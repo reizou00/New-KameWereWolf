@@ -10,3 +10,4 @@
     scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_Citizen
     scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf
     scoreboard players reset $TotalPlayer KameSrever_WereWolf.Roll
+    scoreboard players set $limit KameSrever_WereWolf.Roll 0
