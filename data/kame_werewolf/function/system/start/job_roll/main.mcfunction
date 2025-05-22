@@ -1,4 +1,6 @@
 
+# 最初にリセットだ！
+
 # 俺らはゲームを始めているぞ！
 tag @a add KameServer_WereWolf.WereWolfGame_Player
 
