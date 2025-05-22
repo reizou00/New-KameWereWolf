@@ -17,4 +17,4 @@
 # particle electric_spark ~-4 ~1.5 ~-8
 
 # Test君基準にやっちまいな！
-execute as @e[tag=Test] at @s run function kame_werewolf:system/start/job_roll/roll
+execute as @e[tag=Test,limit=1] at @s run function kame_werewolf:system/start/job_roll/main

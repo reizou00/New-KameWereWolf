@@ -11,3 +11,5 @@
 
 # リセットだ！
 function kame_werewolf:system/end/reset
+# limitスコアをリセット！
+scoreboard players set $limit KameSrever_WereWolf.Roll 0
