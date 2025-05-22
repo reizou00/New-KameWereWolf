@@ -9,6 +9,3 @@
     scoreboard players reset @s KameSrever_WereWolf.Roll
     scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_Citizen
     scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf
-
-#> dataリセット
-    data merge storage kameserever_werewolf:system {Start:false}
