@@ -2,7 +2,7 @@
 #> 人狼用set_up
     # 人狼だと通告。
     title @s title "あなたの役職は..."
-    title @s subtitle "人狼です。"
+    title @s subtitle [{"text": "人狼","color": "red"},{"text": "です。","color": "white"}]
     # 人狼用アイテムを支給。
 function kame_werewolf:bin/get_item/werewolf_tool
 
