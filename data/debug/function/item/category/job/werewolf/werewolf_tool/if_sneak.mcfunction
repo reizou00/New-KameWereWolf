@@ -7,4 +7,4 @@ tag @s add KameServer_WereWolf.Job_WereWolf_Used
 # シフトとジャンプなら解除っす
 execute \
 if predicate debug:detection/jump run \
-function kame_werewolf:player/job/werewolf/used/final
+function kame_werewolf:item/job/werewolf/werewolf_tool/used/final
