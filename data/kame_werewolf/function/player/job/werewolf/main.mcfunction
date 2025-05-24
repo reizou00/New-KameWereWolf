@@ -29,5 +29,5 @@ function kame_werewolf:player/job/werewolf/used/final
 
 # 市民に近づいたなら足を遅くする。
 attribute @s[tag=KameServer_WereWolf.Job_WereWolf_slow] movement_speed base set 0.06
-
+# 近づいていないら元に戻す。
 attribute @s[tag=!KameServer_WereWolf.Job_WereWolf_slow] movement_speed base reset
