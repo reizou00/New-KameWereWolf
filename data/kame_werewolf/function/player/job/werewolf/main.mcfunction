@@ -24,8 +24,8 @@ function kame_werewolf:item/job/werewolf/werewolf_tool/used/main
 
 # 戻しとこうか。
 execute \
-if score @s KameSrever_WereWolf.CoolTime matches 0 run \
-function kame_werewolf:player/job/werewolf/used/final
+at @s[scores={KameSrever_WereWolf.CoolTime=0}] run \
+function kame_werewolf:item/job/werewolf/werewolf_tool/used/final
 
 # 市民に近づいたなら足を遅くする。
 attribute @s[tag=KameServer_WereWolf.Job_WereWolf_slow] movement_speed base set 0.06
