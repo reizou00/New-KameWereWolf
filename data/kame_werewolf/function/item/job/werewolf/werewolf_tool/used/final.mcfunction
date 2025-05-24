@@ -13,7 +13,7 @@ tag @s remove KameServer_WereWolf.Job_WereWolf_Used
 # アイテムを元に戻す
 function kame_werewolf:bin/macro/item/werewolf_tool \
 {\
-model:"stone_sword",\
+model:"iron_sword",\
 name:"人ぶっ殺しソード",\
 name_color:white,\
 lore:"[市民側を倒せる。]",\
