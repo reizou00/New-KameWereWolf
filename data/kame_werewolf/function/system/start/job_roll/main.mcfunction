@@ -3,7 +3,7 @@
 # function kame_werewolf:system/end/main
 
 # 俺らはゲームを始めているぞ！
-tag @a add KameServer_WereWolf.WereWolfGame_Player
+tag @a[gamemode=!spectator] add KameServer_WereWolf.WereWolfGame_Player
 
 # 最初は0
 scoreboard players set $limit KameSrever_WereWolf.Roll 0
