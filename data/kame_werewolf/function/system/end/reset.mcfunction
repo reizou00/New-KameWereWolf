@@ -10,3 +10,29 @@
     scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_Citizen
     scoreboard players reset @s KameSrever_WereWolf.Roll_Onlyonce_WereWolf
     scoreboard players reset $TotalPlayer KameSrever_WereWolf.Roll
+
+#> dataリセット。
+data merge storage kameserever_werewolf:system \
+{\
+Start:false\
+}
+data merge storage kameserever_werewolf:system \
+{\
+Victory_Defeat:\
+    {\
+    Win:\
+        {\
+        WereWolf:false,\
+        Citizen:false\
+        },\
+    Lose:\
+        {\
+        WereWolf:false,\
+        Citizen:false\
+        }\
+    },\
+    Onlyonce:\
+    {\
+    Win:false\
+    }\
+}
