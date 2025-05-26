@@ -21,10 +21,6 @@ Victory_Defeat:\
         WereWolf:true,\
         Citizen:false\
         }\
-    },\
-Onlyonce:\
-    {\
-    Win:false\
     }\
 }
 
