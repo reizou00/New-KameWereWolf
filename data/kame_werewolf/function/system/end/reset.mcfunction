@@ -4,6 +4,7 @@
     tag @s remove KameServer_WereWolf.Job_WereWolf
     tag @s remove KameServer_WereWolf.Rolled
     tag @s remove KameServer_WereWolf.WereWolfGame_Player
+    tag @s remove KameServer_WereWolf.Job_WereWolf_slow
 
 #> スコアリセット
     scoreboard players reset @s KameSrever_WereWolf.Roll

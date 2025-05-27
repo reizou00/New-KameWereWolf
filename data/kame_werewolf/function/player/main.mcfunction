@@ -34,6 +34,10 @@ if entity @a[tag=KameServer_WereWolf.WereWolfGame_Player]
     at @s[tag=KameServer_WereWolf.Job_Citizen] run \
     function kame_werewolf:player/job/citizen/main
 
+
+#> attributeリセット。
+    attribute @s[tag=!KameServer_WereWolf.Job_WereWolf_slow] movement_speed base reset
+
 # !:絶対にresetは一番下に置くこと
 #> data君たちお疲れ様!また頑張ってくれ!
 function sid:player/reset
