@@ -9,6 +9,10 @@
     at @s[tag=KameServer_WereWolf.Job_Citizen] run \
     item replace entity @s armor.chest with air
 
+# もう名前を見る必要がない。消せ！
+execute at @s[tag=KameServer_WereWolf.WereWolfGame_Player] run \
+data merge entity @s {CustomNameVisible:false}
+
 # リセットだ！
 function kame_werewolf:system/end/reset
 # limitスコアをリセット！
