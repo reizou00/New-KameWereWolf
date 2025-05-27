@@ -16,7 +16,7 @@ function kame_werewolf:bin/macro/item/werewolf_tool \
 model:"iron_sword",\
 name:"人ぶっ殺しソード",\
 name_color:white,\
-lore:"[市民側を倒せる。]",\
+lore:"市民側を倒せる。",\
 lore_color:green,\
 damage:10\
 }
