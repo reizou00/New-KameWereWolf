@@ -79,7 +79,7 @@ function kame_werewolf:bin/macro/if_score/limit/now.. with storage kameserever_w
         }\
     } \
     as @a[tag=KameServer_WereWolf.Job_Citizen] at @s run \
-    function kame_werewolf:system/victory_defeat/lose/citizen
+    function kame_werewolf:system/victory_defeat/lose
     # 人狼の負け、市民の勝ち。
     execute \
     if data storage kameserever_werewolf:system \
@@ -108,5 +108,5 @@ function kame_werewolf:bin/macro/if_score/limit/now.. with storage kameserever_w
         }\
     } \
     as @a[tag=KameServer_WereWolf.Job_WereWolf] at @s run \
-    function kame_werewolf:system/victory_defeat/lose/werewolf
+    function kame_werewolf:system/victory_defeat/lose
 
