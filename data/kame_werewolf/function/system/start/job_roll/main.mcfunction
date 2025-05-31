@@ -1,7 +1,4 @@
 
-# 最初にリセットだ！
-# function kame_werewolf:system/end/main
-
 # 俺らはゲームを始めているぞ！
 tag @a[gamemode=!spectator] add KameServer_WereWolf.WereWolfGame_Player
 
