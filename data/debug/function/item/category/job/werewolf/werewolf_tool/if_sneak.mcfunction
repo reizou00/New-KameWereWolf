@@ -1,6 +1,7 @@
 
-# 地面についてるならクールタイム発生。
+# 地面についてるならクールタイム発生。(人狼のみ。)
 execute \
+as @a[tag=KameServer_WereWolf.Job_WereWolf] at @s \
 if predicate debug:detection/is_on_ground run \
 tag @s add KameServer_WereWolf.Job_WereWolf_Used
 
